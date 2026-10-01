@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hello-tune-player"
+version = "1.0.0"
+description = "Play, resynthesize and export the boot/shutdown chimes of Silicon Graphics PROMs (Indigo R4000, Power Indigo2, Indigo2 Impact, O2) in native Python."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["sgi", "irix", "chimes", "karplus-strong", "synthesis",
+            "boot-sound", "wav", "retrocomputing"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Environment :: X11 Applications",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Topic :: Multimedia :: Sound/Audio :: Players",
+    "Topic :: System :: Boot",
+]
+
+[project.urls]
+Homepage = "https://example.invalid/hello_tune-player"
+
+[project.scripts]
+hellotune = "hellotune.cli:main"
+hellotune-gui = "hellotune.gui:run_gui"
+
+[tool.setuptools.packages.find]
+where = ["py"]

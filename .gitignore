@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Packaging
+*.egg
+
+# GUI settings (per-user)
+.settings.json
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------
+# SGI/IRIX PROM reference sources.  These are SGI's proprietary
+# leaked firmware sources; hello_tune-player does not need them
+# to build or run (all parameters are transcribed in
+# py/hellotune/tunes.py).  Keep your local copy of the PROM trees
+# under ref/ -- it is intentionally not tracked so the published
+# repo carries only this project's original code.
+#
+# (Delete these two lines if you really do want to publish ref/.)
+ref/
+!ref/.gitkeep
